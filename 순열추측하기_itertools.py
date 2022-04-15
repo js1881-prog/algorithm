@@ -17,5 +17,3 @@ for tmp in it.permutations(a):
         for x in tmp:
             print(x, end=' ')
         break
-
-    
