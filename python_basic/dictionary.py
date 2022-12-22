@@ -27,7 +27,7 @@ a # {'key2': 'value2', 'key3': 'value3'}
 # collections.defaultdict 클래스를 가진다.
 c = collections.defaultdict(int)
 c['A'] = 5
-c['B'] = 4 
+c['B'] = 4
 c # defaultdict(<class 'int'>, {'A' : 5, 'B' : 4})
 c['C'] += 1 # defaultdict의 default 0을 기준으로 자동으로 생성한 후 여기에 1을 더해 최종적으로 1이 생성된다.
 c # defaultdict(<class 'int'>, {'A': 5, 'B': 4, 'C': 1})
