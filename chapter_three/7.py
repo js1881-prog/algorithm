@@ -19,8 +19,3 @@ for i in range(a):
         e -= 1
 
 print(res)
-
-
-
-
-
