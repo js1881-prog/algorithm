@@ -17,3 +17,4 @@ for i in range(3):
         else:
             cnt += 1
 print(cnt)
+print(cnt)
