@@ -4,6 +4,7 @@ sys.stdin = open("C:\\Study\\algorithm\\input.txt", "r")
 
 a = []
 
+# 최소힙입니다.
 while True:
     n = int(input())
     if n == -1:
@@ -15,5 +16,3 @@ while True:
             print(hq.heappop(a))
     else:
         hq.heappush(a, n)
-print(a[0])
-print(a)
