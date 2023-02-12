@@ -16,3 +16,5 @@ while True:
             print(hq.heappop(a))
     else:
         hq.heappush(a, n)
+
+print(a)
