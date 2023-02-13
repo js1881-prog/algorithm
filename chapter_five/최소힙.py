@@ -17,4 +17,4 @@ while True:
     else:
         hq.heappush(a, n)
 
-print(a)
+print(a[0])
