@@ -19,6 +19,11 @@ a
 a.remove(7) # 앞의 인덱스 먼저 제거
 a
 #print(a.index(7)) # 7이 몇번 인덱스에 있느냐
+a.remove(4) # 해당 값을 제거 (인덱스 X)
+a.remove(7)
+a.insert(1, 7)
+a.insert(1,2)
+a
 
 a = list(range(1, 11))
 print(a)
