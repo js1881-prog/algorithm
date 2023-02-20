@@ -14,4 +14,4 @@ def mergeTwoLists(self, l1: ListNode, l2: ListNode) -> ListNode:
         l1.next = self.mergeTwoLists(l1.next, l2)
     return l1
 
-
+mergeTwoLists()
