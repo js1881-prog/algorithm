@@ -81,3 +81,4 @@ print(node4.val)
 isPalindrome(Self, node1)
 isPalindromeWithDeque(Self, node1) # Deque는 동적 배열을 꺼내올떄(pop(0) => 한칸씩 이동) 시프팅 되지 않기때문에 최적화가 가능하다.
 isPalindromeWithRunner(Self, node1)
+isPalindromeWithRunner(Self, node1)
