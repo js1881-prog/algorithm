@@ -11,8 +11,8 @@ while True:
     if n == 0:
         if len(a) == 0:
             print(-1)
-        else:    
-            print(hq.heappop(a))
+        else:
+            print(-hq.heappop(a))
     else:
-        hq.heappush(a, n)
-
+        hq.heappush(a, -n)
+    
