@@ -1,0 +1,6 @@
+import sys
+sys.stdin = open("C:\\Study\\algorithm\\input.txt", "r")
+
+
+if __name__ == "__main__":
+    n,m = map(int, input().split())
