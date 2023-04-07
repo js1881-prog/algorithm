@@ -16,5 +16,3 @@ def solution(name, yearning, photo):
     
 
 solution(name, yearning, photo)
-solution(name, yearning, photo)
-solution(name, yearning, photo)
