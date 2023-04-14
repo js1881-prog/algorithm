@@ -13,7 +13,7 @@ sum += a[n//2][n//2]
 Q.append((n//2, n//2))
 L = 0
 
-while True:
+while Q:
     if L == n//2:
         break
     size = len(Q)
@@ -22,10 +22,10 @@ while True:
         for j in range(4):
             x = tmp[0] + dx[j]
             y = tmp[1] + dy[j]
-            if ch[x][y] == 0:
-                sum += a[x][y]
-                ch[x][y] = 1
-                Q.append((x, y))
+        if ch[x][y] == 0:
+            sum += a[x][y]
+            ch[x][y] = 1
+            Q.append((x, y))
     L += 1
 
 print(sum)
