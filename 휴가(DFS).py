@@ -23,5 +23,6 @@ if __name__ == "__main__":
     t.insert(0, 0)
     p.insert(0, 0)
     DFS(1, 0)
+    DFS(1, 0)
     print(res)
 
