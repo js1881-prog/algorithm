@@ -1,14 +1,12 @@
 import sys
 sys.stdin = open("C:\\Study\\algorithm\\input.txt", "r")
-
-dx = [0, 1, 0, -1]
-dy = [-1, 0, 1, 0]
+dx = [-1, 0, 1, 0]
+dy = [0, 1, 0, -1]
 
 def DFS(x, y):
     global cnt
-    if x==ex and y==ey:
+    if x == ex and y == ey:
         cnt += 1
-        return
     else:
         for k in range(4):
             xx = x + dx[k]
@@ -18,34 +16,25 @@ def DFS(x, y):
                 DFS(xx, yy)
                 ch[xx][yy] = 0
 
-
 if __name__ == "__main__":
     n = int(input())
-    board = [[0] * n for _ in range(n)]
-    ch = [[0] * n for _ in range(n)]
-    mx = -2147000000
-    mn = 2147000000
-    cnt = 0
+    board = [[0]*n for _ in range(n)]
+    ch = [[0]*n for _ in range(n)]
+    max = -2147000000
+    min = 2147000000
     for i in range(n):
         tmp = list(map(int, input().split()))
         for j in range(n):
-            if tmp[j] < mn:
-                mn = tmp[j]
+            if tmp[j] < min:
+                min = tmp[j]
                 sx = i
                 sy = j
-            if tmp[j] > mx:
-                mx = tmp[j]
+            if tmp[j] > max:
+                max = tmp[j]
                 ex = i
                 ey = j
             board[i][j] = tmp[j]
     ch[sx][sy] = 1
+    cnt = 0
     DFS(sx, sy)
     print(cnt)
-                
-
-    
-    
-
-
-    
-
